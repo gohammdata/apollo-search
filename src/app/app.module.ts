@@ -12,6 +12,19 @@ import { BooksComponent } from './books/books.component';
 import { DetailComponent } from './books/detail/detail.component';
 import { AddComponent } from './books/add/add.component';
 import { EditComponent } from './books/edit/edit.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
+import {
+  MatInputModule,
+  MatPaginatorModule,
+  MatProgressSpinnerModule,
+  MatSortModule,
+  MatTableModule,
+  MatIconModule,
+  MatButtonModule,
+  MatCardModule,
+  MatFormFieldModule } from "@angular/material";
 
 @NgModule({
   declarations: [
@@ -20,7 +33,18 @@ import { EditComponent } from './books/edit/edit.component';
     BooksComponent,
     DetailComponent,
     AddComponent,
-    EditComponent
+    EditComponent,
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MatInputModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule,
+    MatProgressSpinnerModule,
+    MatIconModule,
+    MatButtonModule,
+    MatCardModule,
+    MatFormFieldModule
   ],
   imports: [
     BrowserModule,
@@ -28,7 +52,8 @@ import { EditComponent } from './books/edit/edit.component';
     GraphQLModule,
     HttpClientModule,
     ApolloModule,
-    HttpLinkModule
+    HttpLinkModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
