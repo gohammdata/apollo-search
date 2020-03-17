@@ -8,11 +8,19 @@ import { HttpClientModule } from '@angular/common/http';
 import { EmployeesComponent } from './employees/employees.component';
 import { ApolloModule, Apollo } from 'apollo-angular';
 import { HttpLinkModule, HttpLink } from 'apollo-angular-link-http';
+import { BooksComponent } from './books/books.component';
+import { DetailComponent } from './books/detail/detail.component';
+import { AddComponent } from './books/add/add.component';
+import { EditComponent } from './books/edit/edit.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    EmployeesComponent
+    EmployeesComponent,
+    BooksComponent,
+    DetailComponent,
+    AddComponent,
+    EditComponent
   ],
   imports: [
     BrowserModule,
